@@ -1,0 +1,382 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Heebo', sans-serif; */
+
+/* ANIMATION ================================================================================================================================= */
+
+.animation1{
+    animation: fade1 0.5s ease;
+    transform-origin: center bottom;
+}
+.animation2{
+    animation: fade2 0.5s ease;
+    transform-origin: center bottom;
+}
+@keyframes fade1{
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fade2{
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* HOME PAGE STARTS HERE======================================================================================================================= */
+
+/* NAVBAR(inside header)---------------------------------------- */
+.navbar{
+    padding: 15px 22px;
+}
+.navbar .navbar-brand{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.navbar .nav-link{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Heebo', sans-serif;
+    
+}
+.navbar li{
+    padding: 4px 16px;
+}
+.navbar .navbar-nav a{
+    transition: transform 0.7s;
+}
+.navbar .navbar-nav a:hover{
+    transform: translateY(-2px);
+    
+}
+
+/* LANDING SECTION-------------------------------------------- */
+.landing-section{
+    background: #070707;
+    
+}
+.landing-section img{
+    width: 100%; 
+    padding: 0;
+    align-items: center;
+}
+.landing-section .landing-text{
+    margin-top: 30%;
+    margin-left: 30%;
+    color: white;
+}
+.landing-section .landing-text h1{
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.landing-section p{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 1px;
+    margin-top: 1px;
+}
+.landing-section .btn{
+    margin-top: 25px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px;
+    padding: 10px 16px;
+}
+
+/* FEATURED PRODUCTS SECTION------------------------------------------------ */
+
+.featured-products .row .product1{
+    width: 100%; 
+    text-align: center;
+    margin-top: 120px;
+    padding-left: 0;
+    padding-right: 0; 
+}
+.featured-products .row .product2{
+    width: 100%; 
+    text-align: center;
+    margin-top: 120px;
+    padding-left: 0;
+    padding-right: 0; 
+}
+.featured-products .row .col-6{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.featured-products .row .col-12{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.featured-products .row .product3{
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+}
+.featured-products .row .product4{
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+}
+.featured-products h1{
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 100px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* hover effect for large screens only---------------------- */
+
+    .featured-products .row .product1, .product2, .product3, .product4{
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .featured-products .row .product1:hover  {
+        opacity: 0.8;
+    }
+    .featured-products .row .product2:hover  {
+        opacity: 0.8;
+    }
+    .featured-products .row .product3:hover  {
+        opacity: 0.8;
+    }
+    .featured-products .row .product4:hover  {
+        opacity: 0.8;
+    }
+    
+
+
+
+/* brands section------------------------------- */
+.brand h1{
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 180px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* end section-------------------------------------- */
+
+.end-section{
+    background: url('/img/guitar-end.jpg');
+    color: white;
+    background-position: center;
+    min-height: 200px;
+    margin-top: 80px;
+    opacity: 0.85;
+}
+.end-section .content a{
+    color: #606467;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.end-section .smj{
+    color: #606467;
+    line-height: 18px;
+}
+.end-section .content{
+    padding-top: 60px;
+}
+.end-section .content h1{
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 35px;
+}
+.end-section .content a i{
+    padding: 10px 18px;
+    font-size: 30px;
+    /* color: #45474A; */
+    /* color: whitesmoke; */
+    color: #606467;
+}
+
+
+/* HOME PAGE ENDS HERE======================================================================================================================= */
+
+/* CART AND CARD STYLES STARTS HERE=========================================================================================================== */
+
+
+.show-cart li {
+    display: flex;
+  }
+.card {
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+.card-img-top {
+    width: 100%;
+    align-self: center;
+  }
+.card .card-body{
+    padding: 0 0 10px 0;
+}
+.card .card-title{
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+/* CART AND CARD STYLES END HERE=========================================================================================================== */
+
+/* FILTER SECTION STARTS HERE=========================================================================================================== */
+
+.filter ul{
+    display: flex;
+    margin-bottom: 14px;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.filter ul li{
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+.filter ul li.active{
+    background: #039af4;
+    color: #fff;
+}
+
+/* FILTER SECTION ENDS HERE=========================================================================================================== */
+
+/* REGISTRATION AND LOGIC starts here=================================================================================================== */
+
+
+
+
+/* RESPONIVE DESIGN=================================================================================================================== */
+
+@media only screen and (max-width: 992px) {
+    .landing-section .landing-text{
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .landing-section h1{
+        padding: 30px 150px 20px 150px;
+    }
+    .landing-section .btn{
+        margin-top: 18px;
+        margin-bottom: 50px;
+    }
+    .landing-section li{
+        padding-left: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    .landing-section .landing-text{
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .landing-section .landing-text h1{
+        padding: 0;
+        font-size: 30px;
+    }
+    .landing-section .btn{
+        margin-top: 18px;
+        margin-bottom: 50px;
+    }
+    .landing-section li{
+        padding-left: 0;
+    }
+    .featured-products h1{
+        margin-top: 60px;
+        font-size: 35px;
+    }
+    .featured-products .row .product1{
+        margin-top: 50px;
+        padding: 0 ;
+    }
+    .featured-products .row .product2{
+        margin-top: 50px;
+        padding: 0 ;
+    }
+    .featured-products .row .product3{
+        margin-top: 16px;
+        padding: 0
+    }
+    .featured-products .row .product4{
+        margin-top: 16px;
+        padding: 0 4.5px;
+    }
+    .brand h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .landing-section .btn{
+        margin-top: 18px;
+        margin-bottom: 10px;
+    }
+    .featured-products .row .product1{
+        padding: 0;
+    }
+    .featured-products .row .product2{
+        margin-top: 50px;
+        padding: 0;
+    }
+    .featured-products .row .product3{
+        margin-top: 9px;
+    }
+    .featured-products .row .product4{
+        margin-top: 9px;
+        padding: 0 4px;
+    }
+    .featured-products .row .small-screen-6-a{
+        padding-left: 14px;
+        padding-right: 3px;
+    }
+    .featured-products .row .small-screen-6-b{
+        padding-right: 14px;
+        padding-left: 3px;
+    }
+    .featured-products .row .small-screen-5{
+        padding-left: 14px;
+        padding-right: 0;
+    }
+    .featured-products .row .small-screen-7{
+        padding-right: 14px;
+        padding-left: 0;
+    }
+    #ordered-items-header{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .modal{
+        padding: 1px;
+    }
+    .modal .modal-body{
+        padding: 5px;
+    }
+    .modal .modal-body td{
+        padding: 4px;
+    }
+    
+    
+}
